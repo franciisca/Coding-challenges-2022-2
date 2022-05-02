@@ -36,3 +36,13 @@ number(["a", "b", "c"])
 
   //works!
 
+  //Another solution:
+
+  let number = function(array) {
+    return array.map(function (line, index) {
+      return (index + 1) + ": " + line;
+    });
+  }
+
+  number(["a", "b", "c"])
+
