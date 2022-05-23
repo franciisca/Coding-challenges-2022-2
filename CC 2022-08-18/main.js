@@ -15,6 +15,14 @@
 //P. Function takes as a string with numbers. They are all separated by a space. takes positive and negative integers. there will always be at least one number in the input string. 
 //R. return the highest and lowest number. In a string, separated by a space. Highest number is the first.
 //E. ("3 6 10 39") return "39 3"
-//Pseudo. Write a function that takes a string of numbers. 
-//
+//Pseudo. Write a function that takes a string of numbers. Make it an array and then Number (with map). Apply math max and min to get the output.
 
+function highAndLow(numbers){
+    let arrToNum = numbers.split(' ').map(Number)
+    return `${Math.max.apply(Math, arrToNum)} ${Math.min.apply(Math, arrToNum)}`
+  }
+  
+  highAndLow("2 3 2")
+
+
+//Works!
