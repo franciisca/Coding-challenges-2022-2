@@ -15,13 +15,17 @@
 //R. select the numbers inside the array that when added together result in the "target number". what you return is not the integers themselves, but the INDEX where those integers are in the array.
 //E. [3,6,5], 9  // returns [0,1] (or [1,0]). 0 because 3 is in index0; 1 because 6 is in index1.
 //Pseudo. write a function that hasta 2 parameters (the array of integers and the "target number").
-// using reduce, check which items of the array sum the target.
+// check which items of the array sum the target.
 
 function twoSum(numbers, target) {
-    let reduceNumArr = numbers.reduce((a,b) => a + b, 0)
-    if (reduceNumArr === target){
-        return reduceNumArr[i]
+    for(let i = 0; i<numbers.length; i++){
+      for(let j = i+1; j<numbers.length; j++){
+        let res = numbers[i] + numbers[j]
+        if(res == target) return [i,j]
+      }
     }
   }
 
-twoSum([3,6,5],9)
+twoSum([3,6,5], 9) 
+
+//works!
