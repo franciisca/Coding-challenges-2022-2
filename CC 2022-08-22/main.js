@@ -20,7 +20,20 @@
 // "####################################man!"
 
 
-//P.
-//R.
-//E.
-//Pseudo.
+//P. a string that could have integers and /or letter.
+//R. return the same string, with the characters changed to "#", EXCEPT for the last 4.
+//E. "holacanito" -> "######nito"
+//Pseudo. write a function that takes a string. slice the string in -4.
+//loop through the left string and add # for every character.
+//join both strings.
+
+function maskIt(str){
+   let strLength =  str.length
+   let aAsterisco = strLength - 4
+   for (let i = 1; i <= aAsterisco; i++){
+        return 
+   }
+
+}
+
+maskIt("holacanito")
