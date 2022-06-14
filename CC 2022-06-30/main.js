@@ -14,7 +14,6 @@
 // Return a string of only integers.
 
 
-
 function filter_list (arr){
     let filterArr = arr.filter(item => typeof item == 'number')
       return filterArr
