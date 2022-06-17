@@ -18,26 +18,15 @@
 //E.
 //Pseudo. 
 
-function getSum(a,b) {
-    let max
-    let min 
-    if (a>b){
-        max = a
-    }else{
-       min = b
+function getSum( a,b ){
+    if (a == b) return a; //(1)
+    if (a < b) {
+       return a + getSum(a+1, b); //(2)
+    }else {
+       return a + getSum(a-1,b); //(3)
     }
-    if (max === undefined && min !== undefined) {
-      	let arr1 = [...Array(min+1).keys()];
-        return arr1.reduce((partialSum, a) => partialSum + a, 0);
-    } else if (min !== undefined) {
-    	let arr2 =[...Array(max-min+1).keys()].map(elm => elm+min);
-        return arr2.reduce((partialSum, a) => partialSum + a, 0);
-    } else {
-        let arr3
-    	return arr3.reduce((partialSum, a) => partialSum + a, 0);
-    }
-}
+ }
+ 
+ getSum(1,3)
 
-getSum(1,3)
-
-//Works!
+//Works!!
