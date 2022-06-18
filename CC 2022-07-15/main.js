@@ -25,3 +25,5 @@ function getCount(str){
 }
 
 getCount("a b c")
+
+//works!
