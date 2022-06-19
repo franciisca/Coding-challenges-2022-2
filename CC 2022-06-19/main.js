@@ -23,9 +23,9 @@
 //R. returns the closest "next" integer multiple of 5.
 //E. 18 => 20 ; -5 => -5; 21 => 25
 //Pseudo. write a function that takes an integer. 
-// if it is % 5 === 0, return the same number.}
-//else if, is 0, return 5
-//else round it up with Math.ceil(number%5 === 0)
+// if it is 0, return 5
+//else if, num %5 === 0, return the same number
+//else Math.ceil(num/5)*5
 
 function roundUp5 (num){
     if(num === 0){
@@ -33,8 +33,10 @@ function roundUp5 (num){
     }else if (num%5=== 0){
         return num
     }else{
-        return Math.ceil(num%5 === 0)
+        return Math.ceil(num/5)*5
     }
 }
 
 roundUp5(20)
+
+//Works!
