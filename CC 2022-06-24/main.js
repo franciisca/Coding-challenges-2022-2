@@ -18,8 +18,17 @@
 //Pseudo. write a function that has 3 parameters. 
 
 function takes(operation, value1, value2){
-    let stringT = `${value1}${operation}${value2}`
-    
+    if (operation == "+"){
+        return value1 + value2
+    } else if(operation == "-"){
+        return value1 - value2
+    } else if(operation == "*"){
+        return value1 * value2
+    } else{
+        return value1 / value2
+    }
 }
 
 takes('+',20,20)
+
+//works!
