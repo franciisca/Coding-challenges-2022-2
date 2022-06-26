@@ -29,7 +29,7 @@
 
 function roundUp5 (num){
     if(num === 0){
-        return 5
+        return 0
     }else if (num%5=== 0){
         return num
     }else{
