@@ -14,7 +14,7 @@
 
 function squareDigits(num){
   let numToArray = num.toString().split('')
-  let loopArray = numToArray.map(number => Math.pow(number,2))
+  let loopArray = numToArray(number => Math.pow(number,2))
   return Number(loopArray.join(''))
 }
 
