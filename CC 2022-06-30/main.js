@@ -1,6 +1,5 @@
 // https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript
 // List Filtering
-
 // In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
 
 // Example
@@ -14,7 +13,10 @@
 //Pseudo. //Write a function, parameter is an array. Inside the function loop through the array with a filter and take out string.
 // Return a string of only integers.
 
+
+
 function filter_list (arr){
     let filterArr = arr.filter(item => typeof item == 'number')
       return filterArr
     }  
+
