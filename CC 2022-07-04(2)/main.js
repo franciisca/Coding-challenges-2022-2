@@ -20,4 +20,4 @@ function squareDigits(num){
 
 squareDigits(233)
 
-//Works!
+//Works! .
