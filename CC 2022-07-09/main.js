@@ -16,32 +16,16 @@
 //Pseudo. Write a function that takes a string as a parameter. if the string is a 'number' and if it's length (pin.length) && length is 4 or 6 characters return TRUE. else return false.
 
 
-function validatePIN (pin) {
-    if (typeof pin.slice('') === 'number'){
+function validatePIN(pin){
+    let pinLengthCheck = pin.length == 4 || pin.length == 6
+    let hasOnlyNumbers = pin.match(/^\d+$/)
+
+    if (pinLengthCheck && hasOnlyNumbers){
         return true
-    } else {
-        return false
     }
-  }
-
-
-function validatePin(pin){
-    let pinToArray = pin.split()
-    if (pinToArray.map(partes => typeof partes === 'number')){
-           return Number(pinToArray)
-    }else{
-        return false
-    }
+    return false
 }
-validatePin("123456")
 
-function validatePin(pin){
-    let pinToArray = pin.split('')
-    let i = 0
-    for (i = 0; i< pinToArray.length; i++){
-        if (typeof i == 'number'){
-            return true 
-        }   
-     }
+validatePIN("12345678")
 
-}
+//Works!
