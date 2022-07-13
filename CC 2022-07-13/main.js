@@ -12,8 +12,19 @@
 // The number can be negative already, in which case no change is required.
 // Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
 
-ddddd
-//P.
-//R.
-//E.
-//Pseudo.
+//P. Takes any number (positive, negative, float, zero, etc)
+//R. return that number NEGATIVE (if it is already negative or zero, then don't do anything)
+//E. 10 = -10; 200 = -200; -8 = -8; 0 = 0; -1.3 = -1.3; 4.8 = -4.8
+//Pseudo. Write a function that takes a number. if statements with the Math.sign() method. If it returns 1, then multiply that number by -1. return.
+
+function makeNegative(num){
+    if (Math.sign(num) === 1){
+        return num*-1
+    }else{
+        return num
+    }
+}
+
+makeNegative(29)
+
+//Works!
