@@ -16,9 +16,13 @@ function fakeBin(x){
     mapArr = strToArr.map(index=>{
         if (index < 5){
             return 0
-        }else{
+        }if (index >= 5){
             return 1
         }
     })
-        return mapArr.toString()
+        return mapArr.join("")
   }
+
+  fakeBin("1234")
+
+
