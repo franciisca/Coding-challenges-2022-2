@@ -34,3 +34,5 @@ function findOdd(arr){
 }
 
 findOdd([2,4,6,4,2,2,6])
+
+//Works!!
