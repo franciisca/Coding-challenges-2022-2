@@ -20,9 +20,9 @@
 
 function findOdd(arr){
     let count = 0
-   for (let i = 0; i<arr.length; i++){
-    for(let j = 0; j<arr.length; j++){
-        if(arr[i] == arr[j]){
+    for (let i = 0; i<arr.length; i++){
+        for(let j = 0; j<arr.length; j++){
+            if(arr[i] == arr[j]){
             count++
         }
     }
@@ -34,5 +34,6 @@ function findOdd(arr){
 }
 
 findOdd([2,4,6,4,2,2,6])
+
 
 //Works!!
