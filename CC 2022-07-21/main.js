@@ -21,7 +21,7 @@
 // if more than 4 people liked it = return the same as before but increasing the "2 others"
 //E. "francisca" liked. "Francisca likes this"
 //Pseudo.
-//Write a function that takes a string of names. it can be empty, or have one or more names.
+//Write a function that takes an array of names. it can be empty, or have one or more names.
 // Take the string and transform it into an array (split('')).
 //Count the elements in the array. 
 //If one element, return "(element) likes this"
@@ -29,23 +29,22 @@
 //etc---
 
 function likes(names) {
-    let strToArr = names.split(' ')
-        if (strToArr.length == 2){
-            return `${strToArr[0]} and ${strToArr[1]} like this.`
-        }else if(strToArr.length == 1){
-            return `${strToArr[0]} likes this.`
+        if (names.length == 2){
+            return `${names[0]} and ${names[1]} like this`
+        }else if(names.length == 1){
+            return `${names[0]} likes this`
         }
-        else if(strToArr.length == 3){
-            return `${strToArr[0]}, ${strToArr[1]} and ${strToArr[2]} like this.`
-        }else if(strToArr.length == 4){
-            `${strToArr[0]} and ${strToArr[1]} and 2 others like this.`
-        }else if(strToArr.length == 0){
-            return `no one likes this.`
+        else if(names.length == 3){
+            return `${names[0]}, ${names[1]} and ${names[2]} like this`
+        }else if(names.length == 4){
+            return `${names[0]}, ${names[1]} and 2 others like this`
+        }else if(names.length == 0){
+            return `no one likes this`
         }else{
-            return `${strToArr[0]}, ${strToArr[1]} and ${strToArr.length-2} others like this.`
+            return `${names[0]}, ${names[1]} and ${names.length-2} others like this`
         }
   }
 
-  likes("Francisca")
+  likes(["Francisca"])
 
 
