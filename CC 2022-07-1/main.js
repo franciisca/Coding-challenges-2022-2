@@ -23,3 +23,5 @@ function friend(friends){
 }
 
 friend(["Ryan", "Kieran", "Mark"] )
+
+//Works!
