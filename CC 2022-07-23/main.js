@@ -34,8 +34,18 @@
 //write a function that takes a (positive) integer.
 //loop through the number and return an asterik for each
 
-function pyramid(num){
-    for(let i = 0; i < num; i++){
+function pyramid(numFloors){
+    let result = []
+    let maxLength = 2*numFloors-1;
 
+    for (let i = numFloors; 0 < i; i--){
+        let ele = '*'.repeat(2*i-1)
+        ele = ele.length < maxLength ? ' '.repeat((maxLength-ele.length)/2) + ele + ' '.repeat((maxLength-ele.length)/2) : ele;
+        result.unshift(ele)
     }
+    return result
 }
+
+pyramid(3)
+
+//Works!
