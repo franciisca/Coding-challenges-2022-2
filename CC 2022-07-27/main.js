@@ -31,3 +31,9 @@
 //R.
 //E.
 //Pseudo.
+
+function bouncingBall(h,  bounce,  window) {
+
+
+
+}
