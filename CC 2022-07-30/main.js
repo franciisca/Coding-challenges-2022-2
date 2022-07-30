@@ -17,9 +17,10 @@
 //E. "hola si" returns "hl s"
 //Pseudo. Write a function that takes a string. make it an array and take out the vocals. return remaining array turned into a string.
 
-function takeVocals(strComment){
-   let findVoc = strComment.split('').map(x=>x.replace( /[aeiou]/g, ""));
-   return findVoc.join('')
+function disemvowel(str){
+   return str.split('').map(x=>x.replace(/[aeiou]/ig, "")).join('');
 }
 
-takeVocals("hola como estas")
+disemvowel("hola como estas")
+
+//Works!
