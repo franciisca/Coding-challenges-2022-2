@@ -12,7 +12,14 @@
 
 // Note: for this kata y isn't considered a vowel.
 
-//P.
-//R.
-//E.
-//Pseudo.
+//P. takes a string of words/letters.
+//R. return the string with all the vowels removed.
+//E. "hola si" returns "hl s"
+//Pseudo. Write a function that takes a string. make it an array and take out the vocals. return remaining array turned into a string.
+
+function takeVocals(strComment){
+   let findVoc = strComment.split('').map(x=>x.replace( /[aeiou]/g, ""));
+   return findVoc.join('')
+}
+
+takeVocals("hola como estas")
