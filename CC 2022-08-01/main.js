@@ -12,3 +12,13 @@
 //loop. Make the string an array and loop through it. use if statements and indexOf. 
 //Then
 
+
+function letterCount(str){
+    let word = str.toLowerCase()
+    for(let i = 0; i < word.length; i++){
+        if (word.lastIndexOf(word[i]) == word.indexOf(word[i])){
+            return {i: i++}
+
+        }
+    }
+}
