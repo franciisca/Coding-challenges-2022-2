@@ -14,7 +14,10 @@
 //P. takes a string. checks each character to see if it is repeated.
 //R. returns a string. if the character appears only once the character appears as "(". If it appears more than once in the original string, then the character returns as ")". Ignore caps when comparing.
 //E. "holo" returns "()()"
-//Pseudo. 
+//Pseudo. Create a function that takes a string. Create a variable that holds string .toLowerCase(). 
+//Create a variable that will hold a new string, with the value of "".
+//Create a for loop that loops through the string that was set toLowerCase. 
+// with if statement, compare lastIndexOf and indexOf. if equal, add "(" to the variable containing the "". If not, add ")"
 
 
 function duplicateEncode(str){
@@ -33,3 +36,4 @@ function duplicateEncode(str){
 
 duplicateEncode("holo")
 
+//Works!
