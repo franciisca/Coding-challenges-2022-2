@@ -14,12 +14,22 @@
 //P. takes a string. checks each character to see if it is repeated.
 //R. returns a string. if the character appears only once the character appears as "(". If it appears more than once in the original string, then the character returns as ")". Ignore caps when comparing.
 //E. "holo" returns "()()"
-//Pseudo. write a function that takes a string. turn the string into an array. Loop through it.
-// 
+//Pseudo. 
 
 
-function howManyRepeated(str){
-    const result = [];
-    const strArr = str.toLowerCase().split("").sort().join("").match(/(.)\1+/g);
+function duplicateEncode(str){
+  let word = str.toLowerCase()
+  let newString = ""
+
+  for (let i = 0; i < word.length; i++){
+    if (word.lastIndexOf(word[i]) === word.indexOf(word[i])){
+      newString += "(";
+    }else{
+      newString += ")"
+    }
+  }   
+    return newString
 }
-  hayManyRepeated("hola hola")
+
+duplicateEncode("holo")
+
