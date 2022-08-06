@@ -9,16 +9,17 @@
 //E. "abba" returns {'a':2, 'b':2}. "" returns {}
 //Pseudo. write a function that takes a string. 
 //create a variable that hold and object ({})
-//loop. Make the string an array and loop through it. use if statements and indexOf. 
-//Then
+//loop. Make the string an array and loop through it. 
 
 
-function letterCount(str){
-    let word = str.toLowerCase()
-    for(let i = 0; i < word.length; i++){
-        if (word.lastIndexOf(word[i]) == word.indexOf(word[i])){
-            return {i: i++}
+function count (string) {  
+    let count = {};
+    string.split('').forEach(function(s) {
+       count[s] ? count[s]++ : count[s] = 1;
+    });
+    return count;
+  }
 
-        }
-    }
-}
+count("aba")
+
+//works!
