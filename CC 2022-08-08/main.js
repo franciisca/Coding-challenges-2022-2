@@ -27,9 +27,12 @@
 //81 => true
 //2 => false
 //Pseudo. Write a function that takes an integer. write a variable that holds the square root of the integer. return (true) => intRoot % == 0.
+//More simplified: just return => square root of the integer % 1 == 0.
 
 function isItSquarePerfect(int){
     return Math.sqrt(int) % 1 == 0
 }
 
 isItSquarePerfect(81)
+
+//Works!
