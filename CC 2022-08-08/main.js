@@ -21,7 +21,15 @@
 // 25  =>  true
 // 26  =>  false
 
-//P.
-//R.
-//E.
-//Pseudo.
+//P. takes an integer (positive or negative).
+//R. return true if the number is a perfect square. If not, return false.
+//E. 25 => true
+//81 => true
+//2 => false
+//Pseudo. Write a function that takes an integer. write a variable that holds the square root of the integer. return (true) => intRoot % == 0.
+
+function isItSquarePerfect(int){
+    return Math.sqrt(int) % 1 == 0
+}
+
+isItSquarePerfect(81)
