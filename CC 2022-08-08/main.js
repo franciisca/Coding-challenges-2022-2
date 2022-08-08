@@ -30,7 +30,7 @@
 //More simplified: just return => square root of the integer % 1 == 0.
 
 function isItSquarePerfect(int){
-    return Math.sqrt(int) % 1 == 0
+    return Math.sqrt(int) % 1 === 0
 }
 
 isItSquarePerfect(81)
