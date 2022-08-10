@@ -11,8 +11,8 @@
 
 
 function isPalindrome(x) {
-    let xLowerCase = x.toLowerCase()
-    if (xLowerCase === xLowerCase.split('').reverse().join("")){
+    let strToLower = x.toLowerCase()
+    if (strToLower === strToLower.split('').reverse().join("")){
         return true
     }else{
         return false
@@ -25,3 +25,4 @@ isPalindrome("level")
 function isPalindrome(x){
     return x.toLowerCase() === x.toLowerCase().split("").reverse().join("")
 }
+
