@@ -12,7 +12,15 @@
 // [] --> []
 // ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
 
-//P.
-//R.
-//E.
-//Pseudo.
+//P. function takes an array that contains a list of strings.
+//R. returns the strings numbered, starting from 1. Empty array should return empty array.
+//E. ["hola", "no", "a"] => ["1: hola", "2: no", "3: a"]
+//Pseudo. write a function that takes an array. loop though the array. 
+
+function countLines (arr){
+    for(let i = 0; i < arr.lenght, i++){
+
+    }
+}
+
+countLines(["hola", "no", "a"])
