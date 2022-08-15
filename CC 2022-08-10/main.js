@@ -17,10 +17,20 @@
 //E. ["hola", "no", "a"] => ["1: hola", "2: no", "3: a"]
 //Pseudo. write a function that takes an array. loop though the array. 
 
-function countLines (arr){
-    for(let i = 0; i < arr.lenght, i++){
-
+let number=function(array){
+    const resultArr = [];
+    
+    for (let i = 0, j = 1; i < array.length; i += 1) {
+      if (array.length === 0) {
+        return `Empty array should return empty array`;
+      } else {
+        resultArr.push(`${j}: ${array[i]}`);
+        j += 1;
+      }
     }
-}
+    
+    return resultArr;
+  }
 
-countLines(["hola", "no", "a"])
+  //works!
+
