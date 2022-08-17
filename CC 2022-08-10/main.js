@@ -17,10 +17,10 @@
 //E. ["hola", "no", "a"] => ["1: hola", "2: no", "3: a"]
 //Pseudo. write a function that takes an array. loop though the array. 
 
-let number=function(array){
+let number = function(array){
     const resultArr = [];
     
-    for (let i = 0, j = 1; i < array.length; i += 1) {
+    for (let i = 0, j = 1; i < array.length; i++) {
       if (array.length === 0) {
         return `Empty array should return empty array`;
       } else {
@@ -31,6 +31,8 @@ let number=function(array){
     
     return resultArr;
   }
+
+number(["a", "b", "c"])
 
   //works!
 
