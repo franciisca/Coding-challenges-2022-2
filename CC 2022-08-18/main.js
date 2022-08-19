@@ -12,7 +12,9 @@
 // There will always be at least one number in the input string.
 // Output string must be two numbers separated by a single space, and highest number is first.
 
-//P.
-//R.
-//E.
-//Pseudo.
+//P. Function takes as a string with numbers. They are all separated by a space. takes positive and negative integers. there will always be at least one number in the input string. 
+//R. return the highest and lowest number. In a string, separated by a space. Highest number is the first.
+//E. ("3 6 10 39") return "39 3"
+//Pseudo. Write a function that takes a string of numbers. 
+//
+
