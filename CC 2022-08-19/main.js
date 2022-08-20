@@ -8,7 +8,17 @@
 // n = 1  ==> [1, 2]     # [2^0, 2^1]
 // n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
 
-//P.
-//R.
-//E.
-//Pseudo.
+//P.Takes a non-negative integer as input.
+//R. returns a list of all the powers of 2 with the exponent going from 0 to n (inclusive)
+//E. 
+//Pseudo. Mak a function that takes an integer. Create an empty variable [] to receive the list. 
+
+
+function powersOfTwo(n){
+    let arr = [];
+    for(let i=0; i<=n; i++)
+      arr[i] = 2**i;
+    return arr;
+  }
+
+powersOfTwo(2)
