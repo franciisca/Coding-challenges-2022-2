@@ -6,9 +6,12 @@
 
 //P. Takes a list of strings (in array)
 //R. sort them alphabetically (case sensitive and according to ASCII). Return the FIRST VALUE. Returned value must be a string and have "***" in between each of its letters.
-//E. ["hola", "como", "vamos"] => 
-//Pseudo. write a function that takes an array. return arr.sort()
+//E. ["hola", "como", "vamos"] => c***o***m***o
+//Pseudo. write a function that takes an array. put arr.sort() inside a variable. return sortedArray[0], split(), join with the ***
 
 function firstValue (arr){
-    return arr.sort()
+    let sortedArray = arr.sort()
+    return sortedArray[0].split('').join("***") 
 }
+
+//Works!!
