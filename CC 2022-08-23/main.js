@@ -14,4 +14,6 @@ function firstValue (arr){
     return sortedArray[0].split('').join("***") 
 }
 
+firstValue(["hola", "como", "vamos"])
+
 //Works!!
