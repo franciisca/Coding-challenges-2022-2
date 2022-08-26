@@ -28,12 +28,14 @@
 //join both strings.
 
 function maskIt(str){
-   let strLength =  str.length
-   let aAsterisco = strLength - 4
-   for (let i = 1; i <= aAsterisco; i++){
-        return 
-   }
-
+    let strSliced = str.slice(-4)
+    console.log(strSliced)
+    let astericks = str.replace(/[a-zA-Z0-9 ]/g, '#')
+  
+ console.log(astericks)   
+ console.log(astericks.slice(astericks.length-4))
+    
 }
-
-maskIt("holacanito")
+  
+  
+  maskIt("holacanito")
