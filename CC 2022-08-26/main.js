@@ -29,7 +29,7 @@ function multiTable(number){
     for (let i = 1; i <= 10; i++){
       numArray.push(`${i} * ${number} = ${i * number}`)
     }
-    return numArray.join("/n")
+    return numArray.join("\n")
   }
   
   multiTable(2)
