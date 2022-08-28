@@ -25,7 +25,9 @@
 // compareVersions("10.4.9", "10.5");              // returns false
 // It can be assumed that version strings are non empty and only contain numeric literals and the character '.'.
 
-//P.
-//R.
-//E.
-//Pseudo.
+//P. Takes two strings that have numbers inside (numbers and character ".", never empty)
+//R. returns a boolean. If version 1 is the same or higher than v2 it returns true. If not, returns false.
+//E. ("11","10") returns true
+//("10.4","10.5") returns false
+//Pseudo. Write a function that takes 2 strings. Compares both. If the first is greater or equal as the second input, return true. If not, false.
+
