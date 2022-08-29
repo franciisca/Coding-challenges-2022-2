@@ -31,3 +31,21 @@
 //("10.4","10.5") returns false
 //Pseudo. Write a function that takes 2 strings. Compares both. If the first is greater or equal as the second input, return true. If not, false.
 
+const compareVersions = (v1, v2) => {
+    const a1 = v1.split('.').map(Number);
+    const a2 = v2.split('.').map(Number);
+
+    console.log(a1);
+    console.log(a2);
+
+    for (let i = 0; i < Math.max(a1.length, a2.length); i++) {
+      let n1 = a1[i] || 0, n2 = a2[i] || 0;
+      if (n1 === n2) continue;
+      return (n1 > n2) ? true : false;
+    }
+    return true;
+  };
+
+compareVersions("10.4.9", "10.5"); 
+
+//Works!
