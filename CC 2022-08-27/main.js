@@ -22,7 +22,7 @@ function alphabetPosition(text) {
     let result = "";
     for (let i = 0; i < text.length; i++) {
       let code = text.toUpperCase().charCodeAt(i)
-      if (code > 64 && code < 91) result += (code - 64) + " ";
+      if (code > 64 && code < 91) result += (code - 64) + " "; //64-91 range = the numbers that refer to Uppercaseletters in unicode. 65 being "A", 90 being "Z".
     }
   
     return result.slice(0, result.length - 1);

@@ -11,7 +11,35 @@
 
 // All letters will be lowercase and all inputs will be valid.
 
-//P.
-//R.
-//E.
-//Pseudo.
+//P. A function takes a string of words. All letter will be lowercase, all inputs will be valid.
+//R. return the highest scoring word as a string. Each letter of a word scores point according to its position in the alphabet.
+//E. "hola zorro" return "zorro" 
+//Pseudo. We take a string, and loop it. Then reloop with charCodeAt to get a number. if statements to calculate de number of the letter.
+
+function high(x){
+    // 1. split x by ' ' to an array.
+    const wordList = x.split(' ');
+    
+    // 2. calculate each word score to another array.
+    const getScore = (word) => {
+      return word.split('').reduce((prevScore, currWord) => prevScore + currWord.charCodeAt(0) - 96, 0)
+    }
+    const scoreList = wordList.map(word => getScore(word));
+  
+    // 3. get the highest score and index
+    let highestIndex = 0;
+    let highestScore = 0;
+    scoreList.forEach((score, i) => {
+      if (score > highestScore) {
+        highestIndex = i;
+        highestScore = score;
+      }
+    });
+    
+    // 4. return the string of the highest score index of wordList
+    return wordList[highestIndex];
+  }
+
+high('take me to semynak') //'semynak'
+
+//Works!
