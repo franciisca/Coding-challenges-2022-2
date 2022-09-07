@@ -7,8 +7,16 @@
 
 // All inputs will be valid.
 
-//P.
-//R.
-//E.
-//P.
+//P. takes a string of words.
+//R. return that string of words into an array, having the words sorted alphabetically by the final character in each. If two or more words have the same last character, just return them in the order they appear on the string.
+//E. "cuco hola" --> [hola cuco]
+//P. write a function that takes a string (of words). Transform it into an array. Loop through the array applying charAt(arr.length -1) and check the order.
 
+
+function last(x){
+    return x.split(' ').sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1));
+  }
+
+last("hola cuco")
+
+//Works!
