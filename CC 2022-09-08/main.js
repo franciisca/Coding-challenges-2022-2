@@ -15,17 +15,18 @@
 //P. take an array of integers.
 //R. return a new array. if the integers has a square root return it, if not square the number.
 //E. [10,8,4] -> [100, 64, 2]
-//Pseudo. wirte a function that takes an array of integers. Check each of the integer. If the integer has a square root, return it. If it doesn't, return the interger squared. This all will be a new array.
+//Pseudo. Write a function that takes an array of integers. Check each of the integer. If the integer has a square root, return it. If it doesn't, return the integer squared. This all will be a new array.
 
 function squareRootOrSquare(arr){
-    let num
-    arr.map(item => {
-        if (num = Math.sqrt(item) == Number.isInteger(num) ){
-            console.log(Math.sqrt(item))
-        } else{
-            return item*item
-        }
-    })
+    let newArrChecked = arr.map(index => {
+        if(index > 0 && Math.sqrt(index) % 1 === 0){
+            return Math.sqrt(index)
+        }if(Math.sqrt(index) % 1 != 0)
+            return index*index
+        }) 
+        return newArrChecked
 }
 
 squareRootOrSquare([4,3,9,7,2,1])
+
+//Works!
