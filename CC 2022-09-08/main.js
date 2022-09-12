@@ -12,7 +12,9 @@
 // Notes
 // The input array will always contain only positive numbers, and will never be empty or null.
 
-//P.
-//R.
-//E.
-//Pseudo.
+//P. take an array of integers.
+//R. return a new array. if the integers has a square root return it, if not square the number.
+//E. [10,8,4] -> [100, 64, 2]
+//Pseudo. wirte a function that takes an array of integers. Check each of the integer. If the integer has a square root, return it. If it doesn't, return the interger squared. This all will be a new array.
+
+
