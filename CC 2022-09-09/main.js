@@ -12,10 +12,12 @@
 
 function smallEnough(arr, limit){
     for(let i = 0; i < arr.length; i++){
-        return arr[i] <= limit
+        if (arr[i] > limit)
+            return false
     }
+  return true
 }
 
-smallEnough([3,4,5], 10)
+smallEnough([5,2], 6)
 
 //Works!
