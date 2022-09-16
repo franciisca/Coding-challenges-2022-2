@@ -11,11 +11,15 @@
 // arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
 
-//P.
-//R.
-//E.
-//Pseudo.
+//P. takes two parameter. "a" is an array of integers (two or more), "b" is one integer.
+//R. returns "a" without the "b" integer.
+//E. [2,3,4,3,4],[4] -> [2,3,3]
+//Pseudo. write a function that takes two arrays (one of 2 or more integers, and one of one integer). compares them and returns array "a" without the "b" integers.
 
 function arrayDiff(a,b){
-    
-}
+   return a.filter(val => !b.includes(val));
+  }
+  
+arrayDiff([1,2,2,2,3],[2])
+
+//Works!
