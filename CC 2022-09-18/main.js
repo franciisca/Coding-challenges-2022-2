@@ -11,3 +11,7 @@
 function square(number){
     return Math.pow(number,2)
 }
+
+square(2)
+
+//Works!
