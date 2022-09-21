@@ -15,19 +15,14 @@
 //E.2,9 -> 2,3,4,6,7,8,9 -> returns 39
 //pseudo.function has two parameters (negative or positive integers). add the numbers in between them (including the arguments) except for integers containing 5.
 
-function sumWithoutFive(start,end){
-    let arr = [start,end]
-    let sum = arr.map(index => {
+function dontGiveMeFive(start, end) {
+    let count = 0
+    for (let i = start; i <= end; i++) {
+      if (!/5/.test(i)) {
+        count++
+      }
+    }
+    return count
+  }
 
-    })
-}
-
-function sumWithoutFive(start,end){
-    let arr = [start,end]
-    arr.filter((n) => {
-
-    })
-    return arr.reduce((a, b) => a + b, 0)
-}
-
-sumWithoutFive(2,9)
+dontGiveMeFive(2,9)
